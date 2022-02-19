@@ -1,0 +1,73 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 35px 0;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: url("../img/autograph.png");
+    bottom: 0;
+    right: 0;
+  }
+  &__title {
+    width: 140px;
+    margin: 0 0 45px;
+    padding: 0 0 12px;
+
+    font-size: 30px;
+    letter-spacing: 0;
+    text-align: center;
+
+    color: $blackTitle;
+
+    border-bottom: 1px solid $brown;
+  }
+  &__text {
+    margin: 0 0 20px;
+    padding: 0;
+
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-align: left;
+    &:last-child {
+      margin: 0;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    height: 450px;
+    display: grid;
+    grid-template-areas:
+    "_title ."
+    "_1 _3"
+    "_2 ."
+    "_2 _4";
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 60px 120px 30px 1fr;
+    align-items: baseline;
+    grid-gap: 0 30px;
+    &__title {
+      grid-area: _title;
+    }
+    &__text {
+      margin: 0;
+      font-size: 12px;
+      line-height: 18px;
+      &._1 {
+        grid-area: _1;
+      }
+      &._2 {
+        grid-area: _2;
+      }
+      &._3 {
+        grid-area: _3;
+      }
+      &._4 {
+        grid-area: _4;
+      }
+    }
+  }
+}
