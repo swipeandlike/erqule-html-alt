@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>qwe</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__menu menu">
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+                <nav class="menu__body">
+                    <ul class="menu__list">
+                        <li><a data-goto=".project" href="#" class="menu__link">Проект</a></li>
+                        <li><a data-goto=".book" href="#" class="menu__link">Книга</a></li>
+                        <li><a data-goto=".measure" href="#" class="menu__link">Мероприятие</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="wrapper wrapper--black main-screen">
+        <h1 class="main-screen__title">
+            скандальное соблазнительное запретное
+        </h1>
+<!--        <span class="main-screen__subtitle">Главное светское событие о красоте</span>-->
+        <div class="main-screen__content">
+            <div class="main-screen__preview scroll-item">
+                <img src="img/author.png" alt="Author ">
+                <div class="main-screen__text">
+                    <p>— Привет.</p>
+                    <p>Хочу рассказать вам о своей первой фотокниге и мероприятии, на котором она будет презентована</p>
+                </div>
+            </div>
+            <div class="main-screen__book scroll-item">
+                <img src="img/book.png" alt="book">
+            </div>
+            <button data-goto=".how-to-get" class="main-screen__btn scroll-item menu__link">Как получить книгу?</button>
+        </div>
+        <div data-goto=".project" class="menu__link main-screen__link">
+            Подробнее о проекте
+        </div>
+    </section>
+    <section class="wrapper wrapper--white girl">
+        <h2 class="scroll-item">Лучшие, нигде ранее неопубликованные фотографии настоящей красоты</h2>
+        <div class="girl__img poa scroll-item">
+            <div class="img-wrapper">
+                <img src="img/girl.png" alt="girl">
+                <button class="girl__btn">
+                    <p>
+                        Хочу заказать книгу
+                    </p>
+                </button>
+            </div>
+        </div>
+        <div class="girl__footer scroll-item">
+            <img src="img/18plus.svg" alt="18+" class="before768">
+            <img src="img/18plus--black.svg" alt="18+ (black)" class="after768">
+            <p>Из секретной папки Дмитрия Львова, если вы понимаете, о чем мы)</p>
+        </div>
+    </section>
+    <section class="wrapper wrapper--project project">
+        <h2 class="project__title scroll-item">О проекте</h2>
+        <p class="project__text _1 scroll-item">
+            Женское тело, красота, которую показывают не всем, энергия которая движет этим миром, заставляет мужчин стремиться и добиваться, вызывает завистливые взгляды, сплетни и флирт. Эти социальные феномены окружают мои работы, а наполняет их первозданная красота.
+        </p>
+        <p class="project__text _2 scroll-item">
+            Более 15 лет я оттачиваю мастерство делать картинку до неприличия желанной. За это время моя коллекция обрела полноценность и зрелость, требуя нового воплощения. Вы даже не представляете сколько у меня материала, который хочет, чтобы его наконец-то увидели и журнал Эркюль стал мои долгожданным белым Альбомом.
+        </p>
+        <p class="project__text _3 scroll-item">
+            Это будет настоящий скандал! Возможно обладатели первого выпуска будут хвастать им на журнальных столиках, первый выпуск будут воровать из ресторанов, кто-то будет его прятать от жены, а кто-то выкупать весь тираж - я не знаю точно, что произойдет. Уверен лишь в одном - вы точно не останетесь равнодушными.
+        </p>
+        <p class="project__text _4 scroll-item">
+            Я собрал лучшее - самые сексуальные, откровенные фото-сессии, которые ранее не публиковались, героини которых живут в нашем городе, вы встречаетесь с ними на улице, взглядами в кафе, оборачиваете когда они проходят мимо и наконец-то можете взглянуть на них без спешки. Наслаждайтесь.
+        </p>
+    </section>
+    <section class="wrapper book"></section>
+    <section class="wrapper wrapper--white how-to-get">
+        <h2 class="how-to-get__title">
+            Как получить книгу?
+        </h2>
+        <div class="how-to-get__content">
+            <p class="how-to-get__text">
+                Я тоже мечтаю, чтобы она появилась!
+                Сейчас мы заканчиваем верстку макетов, уже выбрали лучшую бумагу и вот-вот отдаем в печать.
+            </p>
+            <p class="how-to-get__text">
+                Хотите одним из первых узнать о возможности приобретения – оставьте информацию как вам будет удобно, чтобы связались по такому пикантному вопросу.
+            </p>
+        </div>
+        <div class="how-to-get__img">
+            <img src="img/freeBook.png" alt="Free book">
+        </div>
+        <div class="how-to-get__textarea-wrapper">
+            <textarea class="how-to-get__textarea m20-0" placeholder="Хочу узнать о выходе книги! Напишите мне в телеграм @BigBoss_63|"></textarea>
+            <button class="how-to-get__textarea-btn">Отправить</button>
+        </div>
+    </section>
+    <footer class="wrapper wrapper--black">
+        <div class="measure">
+
+        </div>
+    </footer>
+    <script src="js/scrollTo.js"></script>
+    <script src="js/toggleBurgerMenu.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
