@@ -1,4 +1,5 @@
 .how-to-get {
+  padding: 0 0 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,6 +10,7 @@
     margin: 0 0 45px;
     padding: 30px 10px 12px;
 
+    font-family: 'Monesta', serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 300;
@@ -24,6 +26,7 @@
   &__text {
     margin: 0 17px 20px;
 
+    font-family: 'Proxima', sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 300;
@@ -46,12 +49,14 @@
     padding: 10px;
 
     resize: none;
+    outline: none;
 
     background: transparent;
     border: 1px solid #A27D57;
     box-sizing: border-box;
     border-radius: 10px;
     &::placeholder {
+      font-family: 'Proxima', sans-serif;
       font-size: 10px;
       font-style: normal;
       font-weight: 300;
@@ -75,6 +80,7 @@
       background: #B2885C;
       border-radius: 10px;
 
+      font-family: 'Monesta', serif;
       font-size: 14px;
       font-style: normal;
       font-weight: 300;
@@ -83,6 +89,12 @@
 
       color: $trueWhite;
       border: none;
+
+      @include  smooth;
+      &:hover {
+        color: $brown;
+        background: $black;
+      }
     }
   }
   @media screen and (min-width: 768px) {

@@ -6,12 +6,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  //position: relative;
   & .poa {
     position: absolute;
     top: calc(100vh + 103px);
   }
   & h2 {
+    font-family: 'Monesta', serif;
     font-size: 22px;
     line-height: 26px;
     letter-spacing: 0;
@@ -38,6 +38,7 @@
       margin: 0;
       padding: 0;
 
+      font-family: 'Proxima', sans-serif;
       font-size: 10px;
       font-style: normal;
       font-weight: 400;
@@ -60,6 +61,7 @@
       margin: 0 0 0 13px;
       padding: 0;
 
+      font-family: 'Proxima', sans-serif;
       font-size: 10px;
       font-style: normal;
       font-weight: 250;

@@ -1,8 +1,8 @@
 .wrapper {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   box-sizing: border-box;
-  max-width: 1600px;
+  //max-width: 1600px;
   margin: 0 auto;
   &--black {
     background: url("../img/bg.png");
@@ -12,6 +12,7 @@
   &--white {
     background: url("../img/bg__girl.png");
     background-size: cover;
+    min-height: 100%;
   }
   &--project {
     background: url("../img/bg__project.png") no-repeat right;

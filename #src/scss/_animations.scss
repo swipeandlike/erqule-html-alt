@@ -106,3 +106,131 @@
     }
   }
 }
+.how-to-get {
+  &__title {
+    transform: translateY(20px);
+    opacity: 0;
+    @include smoothForAnimation;
+    &.animation-class {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  &__text {
+    transform: translateY(20px);
+    opacity: 0;
+    @include smoothForAnimation;
+    &.animation-class {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  &__img {
+    transform: translateY(20px);
+    opacity: 0;
+    @include smoothForAnimation;
+    &.animation-class {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  &__textarea-wrapper {
+    transform: translateY(20px);
+    opacity: 0;
+    @include smoothForAnimation;
+    &.animation-class {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+.footer {
+  & .measure {
+    &__img {
+      transform: translateY(20px);
+      opacity: 0;
+      @include smoothForAnimation;
+      &.animation-class {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    &__text {
+      transform: translateY(20px);
+      opacity: 0;
+      @include smoothForAnimation;
+      &.animation-class {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    &__subtext {
+      transform: translateY(20px);
+      opacity: 0;
+      @include smoothForAnimation;
+      &.animation-class {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    &__instagram {
+      transform: translateY(20px);
+      opacity: 0;
+      @include smoothForAnimation;
+      &.animation-class {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+  & .cast {
+    &__title {
+      transform: translateY(20px);
+      opacity: 0;
+      @include smoothForAnimation;
+      &.animation-class {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    &__text {
+      transform: translateY(20px);
+      opacity: 0;
+      @include smoothForAnimation;
+      &.animation-class {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    &__item {
+      transform: translateY(20px);
+      opacity: 0;
+      @include smoothForAnimation;
+      &.animation-class {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+  & .partners {
+    &__title {
+      transform: translateY(20px);
+      opacity: 0;
+      @include smoothForAnimation;
+      &.animation-class {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    &__item {
+      transform: translateY(20px);
+      opacity: 0;
+      @include smoothForAnimation;
+      &.animation-class {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+  }
+}
