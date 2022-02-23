@@ -48,7 +48,7 @@ let { src, dest } = require('gulp'),
     webpcss = require('gulp-webpcss'),
     ttf2woff = require('gulp-ttf2woff'),
     ttf2woff2 = require('gulp-ttf2woff2'),
-    fonter = require('gulp-fonter'); 
+    fonter = require('gulp-fonter');
 
 function browserSync(params) {
     browsersync.init({
@@ -65,7 +65,7 @@ function html() {
         .pipe(file_include())
         .pipe(webphtml())
         .pipe(dest(path.build.html))
-        .pipe(browsersync.stream()) 
+        .pipe(browsersync.stream())
 }
 
 function css() {
@@ -116,7 +116,7 @@ function images() {
     return src(path.src.img)
         .pipe(
             webp({
-                quality: 70
+                quality: 90
             })
         )
         .pipe(dest(path.build.img))
