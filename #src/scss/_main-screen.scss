@@ -17,6 +17,12 @@
     background: url(../img/feathers.png) repeat top right;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    &:after {
+      position: absolute;
+      bottom: 50px;
+      right: 15px;
+      content: url("../img/red-feather.png");
+    }
   }
   &__content {
     top: 50%;
@@ -54,13 +60,13 @@
     position: relative;
     &::before {
       position: absolute;
-      bottom: 10px;
-      right: 25px;
+      bottom: -10px;
+      right: 355px;
       z-index: -1;
       content: 'Главное светское событие о красоте';
 
       font-family: 'Monesta', serif;
-      font-size: 16px;
+      font-size: 20px;
       font-style: normal;
       font-weight: 300;
       letter-spacing: 0;
@@ -87,7 +93,6 @@
     box-sizing: border-box;
     border-radius: 10px;
     &.menu__link {
-      @include smooth;
       &:hover {
         color: $trueWhite;
         background: $brown;
@@ -119,6 +124,12 @@
       top: 45%;
       width: 670px;
       font-size: 3.7em;
+      &:after {
+        position: absolute;
+        bottom: 130px;
+        right: 35px;
+        transform: scale(2);
+      }
     }
     &__text {
       margin: 0 0 0 10px;
@@ -128,13 +139,12 @@
       }
     }
     &__book {
-      transform: translate(-150px,45px);
       position: relative;
       & img {
         width: 321px;
       }
       &::before {
-        bottom: 5px;
+        bottom: -10px;
         right: -55px;
 
         font-size: 26px;
@@ -148,8 +158,67 @@
     }
     &__btn {
       border-radius: 20px;
-
-      transform: translate(165px, 10px);
+    }
+    &__link {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      cursor: pointer;
+      & p {
+        font-size: 10px;
+        letter-spacing: 0;
+        text-align: left;
+      }
+      & picture,
+      & img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 8px;
+        height: 53px;
+        transform: translateY(11px);
+      }
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &__title {
+      top: 25%;
+      width: 1100px;
+      font-size: 6em;
+      &:after {
+        position: absolute;
+        bottom: 250px;
+        right: 75px;
+        transform: scale(3);
+      }
+    }
+    &__text {
+      margin: 0 0 0 10px;
+      & p {
+        width: 300px;
+        font-size: 24px;
+        line-height: 34px;
+      }
+    }
+    &__book {
+      position: relative;
+      & img {
+        width: 321px;
+      }
+      &::before {
+        bottom: -15px;
+        right: 90px;
+        font-size: 34px;
+      }
+      &::after {
+        position: absolute;
+        bottom: 80px;
+        right: -100px;
+        content: url(../img/crooked-arrow.svg);
+      }
+    }
+    &__btn {
+      border-radius: 20px;
     }
     &__link {
       display: flex;

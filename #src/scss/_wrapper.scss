@@ -2,7 +2,6 @@
   width: 100%;
   min-height: 100vh;
   box-sizing: border-box;
-  //max-width: 1600px;
   margin: 0 auto;
   &--black {
     background: url("../img/bg.png");
@@ -17,5 +16,22 @@
   &--project {
     background: url("../img/bg__project.png") no-repeat right;
     background-size: contain;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: url("../img/autograph.png");
+      bottom: 0;
+      right: 0;
+    }
+    @media screen and (min-width: 768px) {
+      &::after {
+        right: 115px;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      &::after {
+        right: 295px;
+      }
+    }
   }
 }

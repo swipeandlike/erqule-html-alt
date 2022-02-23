@@ -48,21 +48,51 @@
         transform: translate(130px, 150px);
       }
     }
+    @media screen and (min-width: 1200px) {
+      transform: translate(300px, 200px);
+      &.animation-class {
+        transform: translate(300px, 0px);
+      }
+    }
   }
   &__book {
     opacity: 0;
     @include smoothForAnimation;
     transition-delay: 2s;
     &.animation-class {
+      transform: translate(0, -30px) scale(0.4);
       opacity: 1;
+    }
+    @media screen and (min-width: 768px) {
+      &.animation-class {
+        transform: translate(-150px,15px) scale(1);
+        opacity: 1;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      &.animation-class {
+        transform: translate(0, -95px) scale(1.2);
+      }
     }
   }
   &__btn {
     opacity: 0;
     @include smoothForAnimation;
-    transition-delay: 3s;
     &.animation-class {
+      transform: translate(0px, -150px);
       opacity: 1;
+    }
+    @media screen and (min-width: 768px) {
+      &.animation-class {
+        transform: translate(165px, 10px);
+        opacity: 1;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      transform: translate(345px,210px);
+      &.animation-class {
+        transform: translate(345px,-210px);
+      }
     }
   }
   &__link {
@@ -132,6 +162,12 @@
     &.animation-class {
       opacity: 1;
       transform: translateY(0);
+    }
+    @media screen and (min-width: 1200px) {
+      &.animation-class {
+        opacity: 1;
+        transform: translateY(-100px) scale(2);
+      }
     }
   }
   &__textarea-wrapper {

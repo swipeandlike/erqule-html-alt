@@ -68,57 +68,6 @@ footer {
       justify-content: center;
       margin: 0 0 24px;
     }
-    @media screen and (min-width: 768px) {
-      display: flex;
-      align-items: center;
-      max-width: 560px;
-      &__content {
-        max-width: 330px;
-        align-items: baseline;
-      }
-      &__text {
-        padding: 10px 0;
-
-        font-size: 30px;
-        line-height: 45px;
-        text-align: left;
-      }
-      &__subtext {
-
-        margin: 20px 0 10px;
-
-        text-align: left;
-      }
-      &__instagram {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-        & img {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-        & p {
-          margin: 0 0 0 10px;
-          padding: 0;
-
-          font-size: 16px;
-          line-height: 24px;
-        }
-      }
-      &__img {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 44px 0 0;
-        width: 190px;
-        & img {
-          width: 190px;
-          height: 190px;
-        }
-      }
-    }
   }
   & .cast {
     margin: 60px 0 30px;
@@ -154,9 +103,12 @@ footer {
 
       color: $trueWhite;
     }
+    &__items {
+      min-width: 300px;
+    }
     &__item {
       display: grid;
-      grid-template-columns: 60px 1fr;
+      grid-template-columns: repeat(2, 50%);
       grid-column-gap: 16px;
       margin: 0 0 10px;
       & span,
@@ -180,32 +132,6 @@ footer {
       }
       &:last-child {
         margin: 0;
-      }
-    }
-    @media screen and (min-width: 768px){
-      margin: 100px 0 50px;
-      &__title {
-        width: 70px;
-        margin: 0 0 10px;
-        padding: 0 0 9px;
-
-        font-size: 30px;
-        line-height: 45px;
-      }
-      &__text {
-        margin: 20px 0;
-
-        color: $trueWhite;
-      }
-      &__item {
-        grid-template-columns: 70px 1fr;
-        grid-column-gap: 30px;
-        margin: 0 0 20px;
-        & span,
-        & p {
-          font-size: 16px;
-          line-height: 24px;
-        }
       }
     }
   }
@@ -245,17 +171,6 @@ footer {
       margin: 0 0 30px;
       &:last-child {
         margin: 0;
-      }
-    }
-    @media screen and (min-width: 768px) {
-      &__title {
-        margin: 0 0 24px;
-      }
-      &__items {
-        flex-direction: row;
-      }
-      &__item {
-        margin: 0 30px 0 0;
       }
     }
   }
@@ -316,7 +231,145 @@ footer {
     &__instagram {
       display: none;
     }
-    @media screen and (min-width: 768px) {
+  }
+  & .links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 10px;
+    &__other {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+      padding: 13px 8px 0;
+      width: 100%;
+      & a,
+      & p {
+        margin: 0;
+        padding: 0;
+
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 9px;
+        letter-spacing: 0em;
+
+        color: $brown;
+      }
+      & a {
+        text-decoration: none;
+        &:hover {
+          color: $dark-brown;
+          text-decoration: underline;
+        }
+      }
+    }
+    &__instagram {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    & .measure {
+      display: flex;
+      align-items: center;
+      max-width: 560px;
+      &__content {
+        max-width: 330px;
+        align-items: baseline;
+      }
+      &__text {
+        padding: 10px 0;
+
+        font-size: 30px;
+        line-height: 45px;
+        text-align: left;
+      }
+      &__subtext {
+
+        margin: 20px 0 10px;
+
+        text-align: left;
+      }
+      &__instagram {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        & img {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        & p {
+          margin: 0 0 0 10px;
+          padding: 0;
+
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+      &__img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 44px 0 0;
+        width: 190px;
+        & img {
+          width: 190px;
+          height: 190px;
+        }
+      }
+    }
+    & .cast {
+      margin: 100px 0 50px;
+      &__title {
+        width: 70px;
+        margin: 0 0 10px;
+        padding: 0 0 9px;
+
+        font-size: 30px;
+        line-height: 45px;
+      }
+      &__text {
+        margin: 20px 0;
+
+        color: $trueWhite;
+      }
+      &__item {
+        grid-column-gap: 30px;
+        margin: 0 0 20px;
+        & span,
+        & p {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+    & .partners {
+      &__title {
+        margin: 0 0 24px;
+
+        font-size: 24px;
+      }
+      &__items {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 760px;
+      }
+      &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 30px 30px 0;
+        &:last-child {
+          margin: 0 30px 30px 0;
+        }
+      }
+    }
+    & .info {
       padding: 30px 50px;
       &__logo  {
         margin: 0;
@@ -370,50 +423,209 @@ footer {
         }
       }
     }
-  }
-  & .links {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 0 10px;
-    &__other {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      padding: 13px 8px 0;
-      & a,
-      & p {
-        margin: 0;
-        padding: 0;
-
-        font-family: 'Proxima', sans-serif;
-        font-size: 8px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 9px;
-        letter-spacing: 0;
-        text-align: center;
-
-        color: $brown;
-      }
-      & a {
-        text-decoration: none;
-        &:hover {
-          color: $dark-brown;
-          text-decoration: underline;
-        }
-      }
-    }
-    @media screen and (min-width: 768px) {
+    & .links {
       padding: 0 50px;
       flex-direction: row-reverse;
       justify-content: space-between;
+      &__other {
+        width: 55%;
+        padding: 0;
+        & a,
+        & p {
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
     }
-    &__other {
-      width: 55%;
-      padding: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    & .measure {
+      display: flex;
+      align-items: center;
+      max-width: 1290px;
+      &__content {
+        max-width: 680px;
+        align-items: baseline;
+      }
+      &__text {
+        padding: 10px 0;
+
+        font-size: 64px;
+        line-height: 90px;
+      }
+      &__subtext {
+        width: 650px;
+        margin: 20px 0 10px;
+
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+        letter-spacing: 0em;
+      }
+      &__instagram {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        & img {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 36px;
+          height: 36px;
+        }
+        & p {
+          margin: 0 0 0 10px;
+          padding: 0;
+
+          font-size: 36px;
+          line-height: 48px;
+        }
+      }
+      &__img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 95px 0 0;
+        width: 390px;
+        & img {
+          width: 390px;
+          height: 390px;
+        }
+        @media screen and (min-width: 1240px) {
+          width: 520px;
+          & img {
+            width: 520px;
+            height: 520px;
+          }
+        }
+      }
+    }
+    & .cast {
+      margin: 100px 0 50px;
+      &__title {
+        width: 120px;
+        margin: 0 0 10px;
+        padding: 0 0 9px;
+
+        font-size: 68px;
+        line-height: 95px;
+      }
+      &__text {
+        margin: 20px 0;
+
+        color: $trueWhite;
+
+        font-size: 24px;
+        line-height: 34px;
+      }
+      &__items {
+        min-width: 310px;
+      }
+      &__item {
+        margin: 0 0 20px;
+        & span,
+        & p {
+          font-size: 28px;
+          line-height: 39px;
+        }
+      }
+    }
+    & .partners {
+      &__title {
+        margin: 0 0 24px;
+
+        font-size: 24px;
+        line-height: 34px;
+        &::after {
+          width: 160px;
+        }
+      }
+      &__items {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 760px;
+      }
+      &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 30px 30px 0;
+        &:last-child {
+          margin: 0 30px 30px 0;
+        }
+      }
+    }
+    & .info {
+      padding: 30px 50px;
+      &__logo  {
+        margin: 0;
+      }
+      &__content {
+        margin: 0;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: baseline;
+      }
+      &__text {
+        margin: 0;
+
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+
+      }
+      &__offer {
+        margin-left: 150px;
+
+        font-size: 24px;
+        line-height: 32px;
+      }
+      &__tel {
+        margin: 10px 0 0;
+
+        font-size: 16px;
+        line-height: 19px;
+      }
+      &__instagram {
+        display: none;
+      }
+    }
+    & .links {
+      padding: 0 50px;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      &__other {
+        width: 40%;
+        & a,
+        & p {
+          font-size: 16px;
+          line-height: 19px;
+        }
+      }
+      &__instagram {
+        display: flex;
+        align-items: center;
+
+        text-decoration: none;
+        & img {
+          width: 36px;
+          height: 36px;
+        }
+        & p {
+          margin: 0 0 0 10px;
+
+          font-family: 'Monesta', sans-serif;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 300;
+
+          color: $brown;
+        }
+      }
     }
   }
 }

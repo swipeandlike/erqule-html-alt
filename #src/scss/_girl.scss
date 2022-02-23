@@ -1,18 +1,21 @@
 .girl {
   padding: 32px 0 0;
   height: 100%;
-  min-height: 570px;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  position: relative;
   & .poa {
     position: absolute;
-    top: calc(100vh + 103px);
+    bottom: calc(0vh + 48px);
   }
   & h2 {
     font-family: 'Monesta', serif;
     font-size: 22px;
+    font-weight: 100;
     line-height: 26px;
     letter-spacing: 0;
     text-align: center;
@@ -34,6 +37,8 @@
     left: 63px;
     width: 133px;
     height: 25px;
+    background: transparent;
+    border: none;
     & p {
       margin: 0;
       padding: 0;
@@ -46,6 +51,9 @@
       text-align: center;
 
       color: $black;
+    }
+    &:hover {
+      background: black;
     }
   }
   &__footer {
@@ -81,12 +89,12 @@
   @media screen and (min-width: 768px) {
     display: grid;
     grid-template-areas:
+    ". ."
     ". _h2"
-    ". _footer";
+    ". _footer"
+    ". .";
     grid-template-columns: 55% 45%;
-    grid-template-rows: 150px 40px;
-    height: 428px;
-    min-height: auto;
+    grid-template-rows: 1fr 150px 40px 1fr;
     & h2 {
       grid-area: _h2;
 
@@ -97,7 +105,7 @@
       text-align: left;
     }
     & .poa {
-      top: calc(100vh - 107px);
+      top: 0;
     }
     & .img-wrapper {
       & img {
