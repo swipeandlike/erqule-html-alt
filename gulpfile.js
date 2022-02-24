@@ -116,7 +116,7 @@ function images() {
     return src(path.src.img)
         .pipe(
             webp({
-                quality: 90
+                quality: 100
             })
         )
         .pipe(dest(path.build.img))
@@ -126,7 +126,7 @@ function images() {
                 progressive: true,
                 svgoPlugins: [{ remoteVievBox: false }],
                 interlaced: true,
-                optimizationLevel: 3 // 0 to 7
+                optimizationLevel: 7 // 0 to 7
             })
         )
         .pipe(dest(path.build.img))
