@@ -19,9 +19,10 @@
     -webkit-text-fill-color: transparent;
     &:after {
       position: absolute;
-      bottom: 50px;
-      right: 15px;
+      bottom: -10px;
+      right: -60px;
       content: url("../img/red-feather.png");
+      transform: scale(0.2);
     }
   }
   &__content {
@@ -37,6 +38,9 @@
   &__preview {
     display: flex;
     width: 200px;
+    & img {
+      width: 52px;
+    }
   }
   &__text {
     margin: 0 0 0 10px;
@@ -126,9 +130,15 @@
       font-size: 3.7em;
       &:after {
         position: absolute;
-        bottom: 130px;
-        right: 35px;
-        transform: scale(2);
+        bottom: 60px;
+        right: -50px;
+        transform: scale(0.37);
+      }
+    }
+    &__preview {
+      width: 210px;
+      & img {
+        width: 54px;
       }
     }
     &__text {
@@ -145,9 +155,9 @@
       }
       &::before {
         bottom: -10px;
-        right: -55px;
+        right: -10px;
 
-        font-size: 26px;
+        font-size: 23px;
       }
       &::after {
         position: absolute;
@@ -183,13 +193,20 @@
   @media screen and (min-width: 1200px) {
     &__title {
       top: 25%;
-      width: 1100px;
-      font-size: 6em;
+      width: 1150px;
+      font-size: 6.3em;
       &:after {
         position: absolute;
-        bottom: 250px;
-        right: 75px;
-        transform: scale(3);
+        bottom: 165px;
+        right: 0;
+        transform: scale(0.8);
+      }
+    }
+    &__preview {
+      display: flex;
+      width: 200px;
+      & img {
+        width: 104px;
       }
     }
     &__text {
@@ -203,12 +220,12 @@
     &__book {
       position: relative;
       & img {
-        width: 321px;
+        width: 493px;
       }
       &::before {
-        bottom: -15px;
-        right: 90px;
-        font-size: 34px;
+        bottom: -30px;
+        right: 140px;
+        font-size: 44px;
       }
       &::after {
         position: absolute;

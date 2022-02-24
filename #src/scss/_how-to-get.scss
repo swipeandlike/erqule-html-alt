@@ -139,7 +139,7 @@
     "_img _content"
     "_img _textarea"
     ". .";
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: 1fr minmax(1fr, 140px) minmax(1fr, 300px) 1fr;
     &__title {
       grid-area: _title;
       max-width: 600px;

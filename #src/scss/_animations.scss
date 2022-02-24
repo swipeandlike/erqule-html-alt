@@ -1,6 +1,3 @@
-//.animation-class {
-//  border: 1px solid red;
-//}
 @mixin smoothForAnimation() {
   transition: all 0.7s ease;
 }
@@ -35,23 +32,23 @@
 }
 .main-screen {
   &__preview {
-    transform: translateX(-200%) translateY(0);
+    transform: translate(-200%, 150%);
     opacity: 0;
     transition: 1s ease-in-out;
     &.animation-class {
       opacity: 1;
-      transform: translateX(0);
+      transform: translate(0, 150%);
     }
     @media screen and (min-width: 768px) {
-      transform: translate(130px, 190px);
+      transform: translate(210px, 190px);
       &.animation-class {
-        transform: translate(130px, 150px);
+        transform: translate(210px,125px);
       }
     }
     @media screen and (min-width: 1200px) {
-      transform: translate(300px, 200px);
+      transform: translate(340px, 80px);
       &.animation-class {
-        transform: translate(300px, 0px);
+        transform: translate(340px, 40px);
       }
     }
   }
@@ -60,18 +57,18 @@
     @include smoothForAnimation;
     transition-delay: 2s;
     &.animation-class {
-      transform: translate(0, -30px) scale(0.4);
+      transform: translate(0, -35px) scale(0.4);
       opacity: 1;
     }
     @media screen and (min-width: 768px) {
       &.animation-class {
-        transform: translate(-150px,15px) scale(1);
+        transform: translate(-130px,-10px) scale(1.1);
         opacity: 1;
       }
     }
     @media screen and (min-width: 1200px) {
       &.animation-class {
-        transform: translate(0, -95px) scale(1.2);
+        transform: translate(0, -125px) scale(1);
       }
     }
   }
@@ -84,14 +81,14 @@
     }
     @media screen and (min-width: 768px) {
       &.animation-class {
-        transform: translate(165px, 10px);
+        transform: translate(245px,-50px);
         opacity: 1;
       }
     }
     @media screen and (min-width: 1200px) {
-      transform: translate(345px,210px);
+      transform: translate(385px,210px);
       &.animation-class {
-        transform: translate(345px,-210px);
+        transform: translate(385px,-240px);
       }
     }
   }
@@ -166,7 +163,7 @@
     @media screen and (min-width: 1200px) {
       &.animation-class {
         opacity: 1;
-        transform: translateY(-100px) scale(2);
+        transform: translateY(-100px);
       }
     }
   }
